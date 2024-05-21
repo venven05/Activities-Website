@@ -154,19 +154,15 @@ body .overlay {
     position: absolute;
     padding-bottom: 10px;
     font-size: 15px;
-    top: 21px;
+    top: 25px;
     background-color: #E3E6F3;
     border-radius: 0 0 4px 4px;
     box-shadow: rgba(0, 0, 0, 0.5);
     transition: 0.3s ease;
 }
 
-.activityDrop:hover ul {
-    display: block;
-}
-
 .activityDrop ul li {
-    margin-top: 8px;
+    margin: 8px 0;
 }
 
 .activityDrop ul li {

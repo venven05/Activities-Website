@@ -1,3 +1,19 @@
+/DROPDOWN/
+
+document.addEventListener("DOMContentLoaded", function() {
+    var dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    dropdownToggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            var dropdownMenu = this.nextElementSibling;
+            if (dropdownMenu.style.display === 'block') {
+                dropdownMenu.style.display = 'none';
+            } else {
+                dropdownMenu.style.display = 'block';
+            }
+        });
+    });
+});
+
 /COLOR MIXER/ 
 
 let colorMix = [];
