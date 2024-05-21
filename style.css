@@ -339,7 +339,7 @@ body .GCoverlay {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     background: rgba(0, 0, 0, 0.7);
 }
 
@@ -353,7 +353,7 @@ body .GCoverlay {
     text-align: center;
     border: 1px solid #1a1a1a;
     border-radius: 10px;
-    padding: 130px 0;
+    padding: 140px 0;
     background: linear-gradient(273deg, #5585b5, #005792, #407088, #142d4c);
     background-size: 800% 800%;
 
@@ -433,7 +433,7 @@ body .TGoverlay {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     background: rgba(0, 0, 0, 0.7);
 }
 
@@ -536,7 +536,7 @@ body .OECoverlay {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     background: rgba(0, 0, 0, 0.7);
 }
 
@@ -641,7 +641,7 @@ body .OEGoverlay {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     background: rgba(0, 0, 0, 0.7);
 }
 
@@ -655,7 +655,7 @@ body .OEGoverlay {
     text-align: center;
     border: 1px solid #1a1a1a;
     border-radius: 10px;
-    padding: 20px 0;
+    padding: 30px 0;
     background: linear-gradient(143deg, #f70776, #141010, #680747, #c3195d);
     background-size: 800% 800%;
 
@@ -762,7 +762,7 @@ body .COoverlay {
     text-align: center;
     border: 1px solid #1a1a1a;
     border-radius: 10px;
-    padding: 100px 0;
+    padding: 80px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -830,13 +830,12 @@ body .COoverlay {
     flex-basis: 50%;
     box-sizing: border-box; 
     margin-bottom: 30px;
-    padding: 1px;
-    text-align: left;
+    text-align: center;
     font-size: 20px;
 }
 
 #compoundInterest .container .ess-container2 {
-    width: 45%; /* Set a fixed width for the second container */
+    width: 45%; 
     box-sizing: border-box;
     padding: 10px;
     margin-bottom: 20px;
