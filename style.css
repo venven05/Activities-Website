@@ -1,0 +1,937 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+  width: 100%;
+  background: url("img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);   
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo1 {
+    height: 40px;
+}
+
+#header a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#header a span {
+    font-size: 25px;
+    padding: 0 8px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #5585b5;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #5585b5;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.activityDrop ul {
+    display: none;
+    position: absolute;
+    padding-bottom: 10px;
+    font-size: 15px;
+    top: 21px;
+    background-color: #E3E6F3;
+    border-radius: 0 0 4px 4px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.activityDrop:hover ul {
+    display: block;
+}
+
+.activityDrop ul li {
+    margin-bottom: 8px;
+}
+
+.activityDrop ul li {
+    width: inherit;
+}
+
+#navbar .activityDrop ul li a {
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 12px;
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+    width: 100%;
+}
+
+#product1 {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    margin: 50px 0px;
+}
+
+#product1 .pro-container {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#product1 .pro-container h2 {
+    margin: 40px 0 10px 0;
+}
+
+#product1 .pro-container p {
+    margin: 0 100px 60px 100px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    text-indent: 50px;
+}
+
+#product1 .pro-container h2,
+#product1 .pro-container p {
+    color: #fff;
+}
+
+
+/* HOME PAGE */
+#homeText {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    margin: 50px 0;
+}
+
+#homeText .container {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#homeText .container h2 {
+    margin: 40px 0 10px 0;
+}
+
+#homeText .container p {
+    margin: 20px 100px 40px 100px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+#homeText .container h2,
+#homeText .container p {
+    color: #fff;
+}
+/*END*/
+
+
+/* COLOR MIXER */
+body .CMoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#colorMixer {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#colorMixer .container {
+    padding: 100px;
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    background: linear-gradient(230deg, #ff0000, #ffa500, #b8b80e, #008000, #0000ff, #4b0082, #ee82ee);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: color 27s ease infinite;
+    -moz-animation: color 27s ease infinite;
+    animation: color 27s ease infinite;
+}
+
+@-webkit-keyframes color {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes color {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes color {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+#colorMixer .container h2 {
+    margin: 40px 0 10px 0;
+}
+
+#colorMixer .container p {
+    margin: 20px 100px 20px 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#colorMixer .container h2,
+#colorMixer .container p {
+    color: #fff;
+}
+
+button.colorButton {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #53a8b6;
+    transition: 0.2s ease;
+}
+
+button.colorButton:hover {
+    background-color: #005792;
+}
+
+#colorDisplay {
+    margin: 20px 100px 40px 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+/*END*/
+
+/* GRADE CHECKER */
+body .GCoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#gradeChecker {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#gradeChecker .container {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    padding: 130px 0;
+    background: linear-gradient(273deg, #5585b5, #005792, #407088, #142d4c);
+    background-size: 800% 800%;
+
+    -webkit-animation: color 12s ease infinite;
+    -moz-animation: color 12s ease infinite;
+    animation: color 12s ease infinite;
+}
+
+@-webkit-keyframes color {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes color {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes color {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#gradeChecker .container h2 {
+    margin-bottom: 10px;
+}
+
+#gradeChecker .container p {
+    margin: 20px 100px 20px 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#gradeChecker .container h2,
+#gradeChecker .container p {
+    color: #fff;
+}
+
+#gradeInput {
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+#equivalent {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+button.check {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    color: #000;
+    background-color: #42b883;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+button.check:hover {
+    background-color: #2f9266;
+}
+/*END*/
+
+
+/* TRIANGLE GENERATOR */
+
+body .TGoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#triangleGenerator {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#triangleGenerator .container {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    padding: 45px 0;
+    background: linear-gradient(230deg, #fda403, #e8751a, #c51350, #8a1253);
+    background-size: 1400% 1400%;
+
+    -webkit-animation: color 27s ease infinite;
+    -moz-animation: color 27s ease infinite;
+    animation: color 27s ease infinite;
+}
+
+@-webkit-keyframes color {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes color {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes color {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+#triangleGenerator .container h2 {
+    margin-bottom: 10px;
+}
+
+#triangleGenerator .container p {
+    margin: 20px 100px 20px 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#triangleGenerator .container h2,
+#triangleGenerator .container p {
+    color: #fff;
+}
+
+#character {
+    padding: 15px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#triangleGenerator label {
+    font-size: 20px;
+    color: #fff;
+}
+
+button.generate {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    color: #000;
+    background-color: #118a7e;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.generate:hover {
+    background-color: #0a554d;
+}
+
+#triangleContainer {
+    color: #fff;
+    margin: 50px 100px 20px 100px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*END*/
+
+/* ODD OR EVEN CHECKER */
+
+body .OECoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#oddEvenChecker {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#oddEvenChecker .container {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    padding: 110px 0;
+    background: linear-gradient(44deg, #f3cba5, #25161b, #453953, #975a5e);
+    background-size: 800% 800%;
+
+    -webkit-animation: color 27s ease infinite;
+    -moz-animation: color 27s ease infinite;
+    animation: color 27s ease infinite;
+}
+
+@-webkit-keyframes color {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@-moz-keyframes color {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+@keyframes color {
+    0%{background-position:0% 91%}
+    50%{background-position:100% 10%}
+    100%{background-position:0% 91%}
+}
+
+#oddEvenChecker .container h2 {
+    margin-bottom: 10px;
+}
+
+#oddEvenChecker .container p {
+    margin: 20px 100px 40px 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#oddEvenChecker .container h2,
+#oddEvenChecker .container p {
+    color: #fff;
+}
+
+#gradeInput {
+    padding: 15px 30px;
+    font-size: 14px;
+}
+
+#oddEvenChecker label {
+    font-size: 20px;
+    color: #fff;
+}
+
+#numberGetter {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px 30px;
+    text-align: center;
+}
+
+button.oecheck {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #53a8b6;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+button.oecheck:hover {
+    background-color: #276f7a;
+}
+
+#oddOrEven {
+    margin: 20px 100px 0 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*END*/
+
+
+/* EVEN AND ODD GENERATOR */
+
+body .OEGoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#oddEvenGenerator {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#oddEvenGenerator .container {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    padding: 20px 0;
+    background: linear-gradient(143deg, #f70776, #141010, #680747, #c3195d);
+    background-size: 800% 800%;
+
+    -webkit-animation: color 27s ease infinite;
+    -moz-animation: color 27s ease infinite;
+    animation: color 27s ease infinite;
+}
+
+@-webkit-keyframes color {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+@-moz-keyframes color {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+@keyframes color {
+    0%{background-position:20% 0%}
+    50%{background-position:81% 100%}
+    100%{background-position:20% 0%}
+}
+
+#oddEvenGenerator .container h2 {
+    margin: 10px 0;
+}
+
+#oddEvenGenerator .container p {
+    margin: 10px 100px 40px 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#oddEvenGenerator .container h2,
+#oddEvenGenerator .container p {
+    color: #fff;
+}
+
+#oddEvenGenerator label {
+    font-size: 20px;
+    color: #fff;
+}
+
+#rangeLimit {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px 30px;
+    text-align: center;
+}
+
+button.oegen {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    color: #000;
+    background-color: #53a8b6;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+button.oecheck:hover {
+    background-color: #276f7a;
+}
+
+#oddEvenGenerator .oeresult h4 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+#oddEvenGenerator .oeresult p {
+    font-size: 20px;
+    overflow-y: auto;
+    max-height: 200px;
+    padding: 5px;
+}
+
+/*END*/
+
+
+/* COMPOUND INTEREST */
+
+body .COoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#compoundInterest {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#compoundInterest .container {
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(313deg, #6a8b8b, #2b4353, #e8630a, #548585);
+    background-size: 800% 800%;
+
+    -webkit-animation: color 27s ease infinite;
+    -moz-animation: color 27s ease infinite;
+    animation: color 27s ease infinite;
+}
+
+@-webkit-keyframes color {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+@-moz-keyframes color {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+@keyframes color {
+    0%{background-position:0% 11%}
+    50%{background-position:100% 90%}
+    100%{background-position:0% 11%}
+}
+
+#compoundInterest .container h2 {
+    margin: 10px 0;
+}
+
+#compoundInterest .container p {
+    margin: 10px 100px 20px 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#compoundInterest .container h2,
+#compoundInterest .container p {
+    color: #fff;
+}
+
+#compoundInterest .container label {
+    color: #fff;
+}
+
+#compoundInterest .container input {
+    text-align: center;
+    padding: 3px;
+}
+
+#compoundInterest .container .ess-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#compoundInterest .container .ess-container .ess {
+    flex-basis: 50%;
+    box-sizing: border-box; 
+    margin-bottom: 30px;
+    padding: 1px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#compoundInterest .container .ess-container2 {
+    width: 45%; /* Set a fixed width for the second container */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#compoundFrequency {
+    padding: 5px;
+}
+
+#compoundInterest .container .ess-container2 p {
+    text-align: left;
+    font-size: 3px;
+}
+
+
+
+button.calcu {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    color: #000;
+    background-color: #42b883;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+button.calcu:hover {
+    background-color: #208155;
+}
+
+/*END*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid #5585b5;
+    border-radius: 6px;
+} 
+
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover, 
+footer a:hover {
+    color: #5585b5;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}

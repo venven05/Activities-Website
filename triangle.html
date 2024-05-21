@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Cinco HTA</title>
+	<script src="https://kit.fontawesome.com/c2ae3ac597.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="TGoverlay">
+		<section id="header">
+			<a href="#" id="logo"><img src="img/logo.png" class="logo1" alt=""><span>Holy Trinity Academy</span></a>
+		
+			<div>
+				<ul id="navbar">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="activityDrop">
+						<a class="active" href="#">Activities <i class="fa-solid fa-caret-down"></i></a>
+						<ul>
+							<li><a href="color.html">Color Mixer</a></li>
+							<li><a href="grade.html">Grade Checker</a></li>
+							<li><a href="#">Triangle Generator</a></li>
+							<li><a href="oecheck.html">Odd or Even Checker</a></li>
+							<li><a href="oegen.html">Even and Odd Generator</a></li>
+							<li><a href="comin.html">Compound Interest</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="triangleGenerator" class="section-p1">
+			<div class="container">
+				<h2>Triangle Pattern Generator</h2>
+				<p>Choose any character and generate a triangle out of it!</p>
+
+                <label for="character">Character:</label>
+                <input type="text" id="character" maxlength="1">
+
+                <button class="generate" onclick="generateTriangle()">Generate Triangle</button>
+
+                <div id="triangleContainer">
+                    <p>
+                        @ <br>
+                        @@ <br>
+                        @@@ <br>
+                        @@@@ <br>
+                        @@@@@ <br>
+                    </p>
+                </div>
+			</div>
+		</section>
+
+	<script src="script.js"></script>
+</body>
+</html>

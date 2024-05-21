@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Cinco HTA</title>
+	<script src="https://kit.fontawesome.com/c2ae3ac597.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="overlay">
+		<section id="header">
+			<a href="#" id="logo"><img src="img/logo.png" class="logo1" alt=""><span>Holy Trinity Academy</span></a>
+		
+			<div>
+				<ul id="navbar">
+					<li><a class="active" href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="activityDrop">
+						<a href="#">Activities <i class="fa-solid fa-caret-down"></i></a>
+						<ul>
+							<li><a href="color.html">Color Mixer</a></li>
+							<li><a href="grade.html">Grade Checker</a></li>
+							<li><a href="triangle.html">Triangle Generator</a></li>
+							<li><a href="oecheck.html">Odd or Even Checker</a></li>
+							<li><a href="oegen.html">Even and Odd Generator</a></li>
+							<li><a href="comin.html">Compound Interest</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="homeText" class="section-p1">
+			<div class="container">
+				<h2>Holy Trinity Academy</h2>
+				<p>Holy Trinity Academy (HTA), also referred to as the Most Holy Trinity Academy, or colloquially as Holy, is a private parochial co-educational school in Sampaloc, Manila, Philippines. The school was established in June 1947 by Rev. Fr. Bernardo Torres. The school accepted both male and female students, but in separate departments, until it became fully co-educational in 1976.</p>
+				<p>The school currently maintains a Level 2 accreditation from the Philippine Accrediting Association of Schools, Colleges, and Universities (PAASCU) since its approval in December 2015. The school is part of the Roman Catholic Archdiocese of Manila Educational System (RCAMES), an educational system and a group of catholic and parochial schools governed by Roman Catholic Archdiocese of Manila, where the school is under the fourth cluster, headed by the school's director, Rev. Fr. Marion C. Munda.</p>
+				<p>Holy Trinity Academy offers the K–12 curriculum program. In the Senior High School Department, the school offers five academic tracks, which prepares students for college and their chosen undergraduate program. In the school year 2019–2020, the school served a population of around 3,000 enrollees annually in its preparatory, elementary, and high school departments.</p>
+				<p>Some of the HTA alumni have been recognized for their works in arts, media, filmmaking, and science, including, Lexi Gonzales, Mon Gualvez, and Kyxz Mendiola.</p>
+			</div>
+		</section>
+	
+	<!--
+	<section id="product1" class="section-p1">
+		<div class="pro-container">
+			<div class="pro">
+				<img src="img/products/f1.jpeg" alt="">
+				<div class="des">
+					<span>Manfinity EMRG</span>
+					<h5 id="proName">Men's Denim Jacket Light Wash</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4 id="proPrice">₱1,410</h4>
+				</div>
+				<button onclick="addItems()"><i class="fa-solid fa-cart-plus cart"></i></button>
+			</div>
+			<div class="pro">
+				<img src="img/products/f2.jpg" alt="">
+				<div class="des">
+					<span>Manfinity EMRG</span>
+					<h5 id="proName">Men's Denim Jacket White</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱1,339</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f3.jpg" alt="">
+				<div class="des">
+					<span>Manfinity EMRG</span>
+					<h5 id="proName">Men's Denim Jacket Coffee Brown</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱1,005</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f4.jpg" alt="">
+				<div class="des">
+					<span>Manfinity EMRG</span>
+					<h5>Men's Denim Jacket Red</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱1,339</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f5.jpg" alt="">
+				<div class="des">
+					<span>Manfinity Homme</span>
+					<h5>Men's Cargo Pants Black</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱829</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f6.jpg" alt="">
+				<div class="des">
+					<span>Manfinity Homme</span>
+					<h5>Men's Cargo Pants Light Grey</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱829</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f7.jpg" alt="">
+				<div class="des">
+					<span>Manfinity Homme</span>
+					<h5>Men's Cargo Pants Green</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱829</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f8.jpg" alt="">
+				<div class="des">
+					<span>Manfinity Homme</span>
+					<h5>Men's Cargo Pants Khaki</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱829</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f9.jpg" alt="">
+				<div class="des">
+					<span>QZlingchuang</span>
+					<h5>Men's White Sneakers</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱964</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f10.jpg" alt="">
+				<div class="des">
+					<span>Huayue Yjm</span>
+					<h5>Men's Khaki Outdoor Sneakers</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱1,086</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f11.jpg" alt="">
+				<div class="des">
+					<span>Vogue trace</span>
+					<h5>Men's Black Casual Shoes</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱899</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f12.jpg" alt="">
+				<div class="des">
+					<span>One shoe for each person</span>
+					<h5>Men's Casual Sports Shoes</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱944</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f13.jpg" alt="">
+				<div class="des">
+					<span>DANIELS&DIANA</span>
+					<h5>Men's Black Baseball Cap</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱140</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f14.jpg" alt="">
+				<div class="des">
+					<span>Lude&Hein</span>
+					<h5>3pcs Multicolor Fashion Glasses</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱129</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f15.jpg" alt="">
+				<div class="des">
+					<span>Pinzzzz</span>
+					<h5>Men's Automatic Casual Belt</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱144</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="img/products/f16.jpg" alt="">
+				<div class="des">
+					<span>World Time</span>
+					<h5>Set Men's Wrist Accessories</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>₱125</h4>
+				</div>
+				<a href="#"><i class="fa-solid fa-cart-plus cart"></i></a>
+			</div>
+		</div>
+	</section>
+	
+	<section id="pagination" class="section-p1">
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+	</section>
+
+	<section id="newsletter" class="section-p1 section-m1">
+		<div class="mewstext">
+			<h4>Sign Up for Newsletters</h4>
+			<p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+		</div>
+		<div class="form">
+			<input type="text" placeholder="Your email address">
+			<button class="normal">Sign Up</button>
+		</div>
+	</section>
+	
+	<footer class="section-p1">
+		<div class="col">
+			<img src="img/logo.png" alt="" class="logo">
+			<h4>Contact</h4>
+			<p><strong>Address:</strong> 203 E. Rodriguez Sr. Ave., Blk. 6, Brgy. Damayang Lagi, Quezon City</p>
+			<p><strong>Phone:</strong> 0994-425-9294</p>
+			<p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+			<div class="follow">
+				<h4>Follow us</h4>
+				<div class="icon">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-pinterest-p"></i>
+					<i class="fab fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col">
+			<h4>About</h4>
+			<a href="#">About Us</a>
+			<a href="#">Delivery Information</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Terms & Conditions</a>
+			<a href="#">Contact Us</a>
+		</div>
+		
+		<div class="col">
+			<h4>My Account</h4>
+			<a href="#">Sign In</a>
+			<a href="#">View Cart</a>
+			<a href="#">My Wishlist</a>
+			<a href="#">Track My Order</a>
+			<a href="#">Help</a>
+		</div>
+		
+		<div class="col install">
+			<h4>Install App</h4>
+			<p>From App Store or Google Play</p>
+			<div class="row">
+				<img src="img/pay/app.jpeg">
+				<img src="img/pay/play.jpeg">
+			</div>
+			<p>Secured Payment Getaways</p>
+			<img src="img/pay/pay.png">
+		</div>
+		
+		<div class="copyright">
+			<p>&#169; 2024, RavenShop - Online Shopping Website</p>
+		</div>
+	</footer>-->
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

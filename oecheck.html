@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Cinco HTA</title>
+	<script src="https://kit.fontawesome.com/c2ae3ac597.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="overlay">
+		<section id="header">
+			<a href="#" id="logo"><img src="img/logo.png" class="logo1" alt=""><span>Holy Trinity Academy</span></a>
+		
+			<div>
+				<ul id="navbar">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="activityDrop">
+						<a class="active" href="#">Activities <i class="fa-solid fa-caret-down"></i></a>
+						<ul>
+							<li><a href="color.html">Color Mixer</a></li>
+							<li><a href="grade.html">Grade Checker</a></li>
+							<li><a href="triangle.html">Triangle Generator</a></li>
+							<li><a href="#">Odd or Even Checker</a></li>
+							<li><a href="oegen.html">Even and Odd Generator</a></li>
+							<li><a href="comin.html">Compound Interest</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="oddEvenChecker" class="section-p1">
+			<div class="container">
+				<h2>Odd/Even Number Checker</h2>
+                <p>Enter a number and see if it is an Odd or Even number.</p>
+				
+                <label for="numberGetter">Enter a number:</label>
+                <input type="number" id="numberGetter">
+
+                <button class="oecheck" onclick="numberChecker()">Check</button>
+
+                <p id="oddOrEven">Click check to start</p>
+			</div>
+		</section>
+
+	<script src="script.js"></script>
+</body>
+</html>
