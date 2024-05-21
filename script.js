@@ -124,10 +124,10 @@ function calculateAndDisplayInterest() {
     while (years < time) {
         compoundPrincipal *= Math.pow(1 + rate / compoundFrequency, compoundFrequency);
         years++;
-        log += `Year ${years}: Compound principal: $${compoundPrincipal.toFixed(2)}<br>`;
+        log += `Year ${years}: Compound principal: ₱${compoundPrincipal.toFixed(2)}<br>`;
     }
 
     const compoundInterest = compoundPrincipal - principal;
-    document.getElementById('result').textContent = `Compound interest: $${compoundInterest.toFixed(2)}`;
+    document.getElementById('result').textContent = `Compound interest: ₱${compoundInterest.toFixed(2)}`;
     document.getElementById('log').innerHTML = log;
 }
